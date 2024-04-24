@@ -295,10 +295,39 @@ font-size: 42px;
 
     text-align: left;
     color: white;                                                                                                       
-    font-size: 42px;
+    font-size: 33px;
  
     
 }
+
+.skill-content h3{
+    
+    text-align: left;
+    color: white;                                                                                                       
+    font-size: 33px;
+ 
+    
+}
+
+.skill-content h4{
+    
+    text-align: left;
+    color: white;                                                                                                       
+    font-size: 33px;
+ 
+    
+}
+
+.skill-content h5{
+    
+    text-align: left;
+    color: white;                                                                                                       
+    font-size: 33px;
+ 
+    
+}
+
+
 
 .skill-content{
 
@@ -315,6 +344,7 @@ font-size: 42px;
 
 .imagelogo img
 {
+    margin-right: 10px;
     margin-left: 20px;
     text-align: center;
     padding: 20% 20% 20%;
@@ -323,10 +353,32 @@ font-size: 42px;
     height: auto;
 }
 
+
 .imagelogo h2 
 {
   
     margin-left: 105px;
+    margin-bottom: 50px;
+}
+
+.imagelogo h3
+{
+    
+    margin-left: 35px;
+    margin-bottom: 50px;
+}
+
+.imagelogo h4
+{
+    
+    margin-left: 85px;
+    margin-bottom: 50px;
+}
+
+.imagelogo h5
+{
+    
+    margin-left: 85px;
     margin-bottom: 50px;
 }
 
@@ -338,6 +390,9 @@ font-size: 42px;
     display: inline-block;
     
 }
+
+
+
 
 .projects{
 
