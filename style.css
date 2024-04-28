@@ -86,6 +86,11 @@ span{
     align-items: center;
     gap: 7em;
     padding: 30px 12% 0;
+    background-image: url("IMG/ted.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .home-content{
@@ -128,8 +133,8 @@ span{
 
 .img-box img{
     opacity: 0;
-    transform: translateY(100%);
-    animation: slideInTop 1s forwards;
+    transform: translateY(1.8%);
+    animation: fadeIn 1s forwards;
     animation-delay: 1s;
 }
 
@@ -206,17 +211,18 @@ span{
    
     text-align: center;
     padding: 15px 28px;
-    background-color: black;
+    background-color: orangered;
     color: white;
     border: 2px solid transparent;
     border-radius: 8px;
     font-size: 18px;
     letter-spacing: 1px;
     font-weight: 600;
-    transition: 0.3 ease;
     cursor: pointer;
     display: flex;
     white-space: nowrap; 
+    transition: background-color 0.3s ease; 
+    border: 2px solid black;
 
  
 }
@@ -224,7 +230,7 @@ span{
 .btn-cv:hover
 {
     background-color: white;
-    color: black;
+    color: orangered;
     border: 2px solid black;
 }
 
@@ -232,7 +238,7 @@ span{
 .img-box img{
     width: 550px;
     height: auto;
-    border-radius: 50%;
+   
     
 }
 
@@ -276,18 +282,26 @@ font-size: 42px;
 .about-content p{
     color: white;
     font-size: 20px;
-    margin: 2em 0 6em;
+    margin: 2em 0 4em;
+    line-height: 1.5;
     
 }
 
+
+
+
 .skill{
     background-image: url("IMG/cool-background.png");
-    
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     padding: 16% 8% 10%;
     gap: 10em;
 
 }
+
 
 
 .skill-content h2{
@@ -378,26 +392,37 @@ font-size: 42px;
 .imagelogo h5
 {
     
-    margin-left: 85px;
+    margin-left: 105px;
     margin-bottom: 50px;
 }
 
 .imagelogo
 {
+   
     margin-right: 100px;
     background-color: rgb(66, 66, 66);
     border-radius: 5%;
     display: inline-block;
+    transition: 0.5s ease-out;
     
 }
 
 
+.imagelogo:hover
+{
+    background-color: orangered;
+    transform: scale(1.1);
+}
+
+.imagelogo:first-child {
+    margin-left: 65px; 
+}
 
 
 .projects{
 
 
-    background-color:rgb(3, 3, 3) ;
+    background-color:rgb(17, 17, 17) ;
     padding: 12% 8% 10%;
     gap: 10em;
 
@@ -451,6 +476,11 @@ font-size: 42px;
 
     }
 
+.img-pro2 img:hover
+{
+    transform: scale(1.2);
+}
+
 .cpp{
     padding: 50px 0 0;
     text-align: center;
@@ -495,7 +525,8 @@ mark[role="engine"] {
    
     display: inline-block; 
     margin-right: 100px; 
-    margin-left: 275px; /* Décalage vers la droite */
+    margin-left: 275px; 
+   
 }
 
 .img-pro2:last-child {
@@ -511,6 +542,7 @@ mark[role="engine"] {
    width: 325px;
    height: auto;
    border-radius: 5%;
+   transition: transform 0.5s;
    
   
 }
@@ -520,6 +552,7 @@ mark[role="engine"] {
     background-color: rgb(231, 231, 231);
     padding: 50px 50px 50px;
     text-align: center;
+    
 }
 
 .contact-content h2
@@ -529,14 +562,17 @@ mark[role="engine"] {
     font-size: 45px ;
 
     text-align: center;
+    margin-bottom: 100px;
+   
 }
 
 
 .case{
     
     display: inline-block;
-    background-color: rgb(0, 0, 0);
+    background-color:  rgb(17, 17, 17) ;
     border-radius: 5%;
+    margin-right: 75px;
    
   
    
@@ -544,8 +580,9 @@ mark[role="engine"] {
 .case2{
     
     display: inline-block;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(17, 17, 17) ;
     border-radius: 5%;
+    margin-right: 75px;
    
   
    
@@ -553,7 +590,7 @@ mark[role="engine"] {
 .case3{
     
     display: inline-block;
-    background-color: rgb(0, 0, 0);
+    background-color:  rgb(17, 17, 17) ;
     border-radius: 5%;
    
   
@@ -569,15 +606,17 @@ mark[role="engine"] {
     margin-right: 50px;
     width: 50px;
     height: auto;
-    transform: translateY(15px);
+    transform: translate(-45px, 25px);
     
    
 }
-.case h2{
-    
+.case h4{
+    font-size: 30px;
     margin-right: 100px;
     display: inline-block;
     color: aliceblue;
+    text-align: center;
+    transform: translateX(-38px);
 }
 
 .case h3{
@@ -586,6 +625,7 @@ mark[role="engine"] {
     display: block;
     color: aliceblue;
     margin-left: 145px;
+    
 }
 
 .case2 img
@@ -596,44 +636,49 @@ mark[role="engine"] {
     margin-right: 50px;
     width: 50px;
     height: auto;
-    transform: translateY(15px);
-    
-   
+    transform: translate(-45px, 25px);
+
 }
-.case2 h2{
-    
+.case2 h4{
+  
+    font-size: 30px;
     margin-right: 100px;
     display: inline-block;
     color: aliceblue;
+    transform: translateX(-76px);
 }
 
 .case2 h3{
+
+    font-size: 18px;
     margin-bottom: 40px;
     margin-right: 100px;
     display: block;
     color: aliceblue;
-    margin-left: 145px;
+    margin-left: 50px;
     transform: translateX(85px);
+   
 }
 
 
 .case3 img
 {
     margin-top: 40px;
-   
+    transform: translate(-45px, 25px);
     margin-left: 100px;
     margin-right: 50px;
     width: 50px;
     height: auto;
-    transform: translateY(15px);
+  
     
    
 }
-.case3 h2{
-    
+.case3 h4{
+    font-size: 30px;
     margin-right: 100px;
     display: inline-block;
     color: aliceblue;
+    transform: translateX(-32px);
     
 }
 
@@ -643,5 +688,16 @@ mark[role="engine"] {
     display: block;
     color: aliceblue;
     margin-left: 145px;
+    
    
 }
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+  }
+  
+  .fade-in.visible {
+    opacity: 1;
+  }
+
