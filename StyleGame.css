@@ -1,0 +1,14 @@
+.ilu{
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(241, 241, 241);
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    padding: 30px 12% 0;
+    background-image: url("IMG/image.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}

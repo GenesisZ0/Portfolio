@@ -133,7 +133,7 @@ span{
 
 .img-box img{
     opacity: 0;
-    transform: translateY(38px);
+    transform: translate(60.4%,5px);
     animation: fadeIn 1s forwards;
     animation-delay: 1s;
 }
