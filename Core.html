@@ -26,9 +26,11 @@
         <nav class="navbar">
 
            <a href="#" class="active"> Home </a>
-           <a href="#contact" class="contact"> Contact Me </a>
+        
        
         </nav>
+
+        <a href="#contact" class="contact"> Contact Me </a>
     </header>
 
 
@@ -46,31 +48,213 @@
 
      </section>
 
-     <section class="Main">
+    </section>
 
-        <div class="about-content fade-in">
-        <h2 class="heading"><span>About Me</span></h2>
-        <h3><span>Gameplay Developer</span></h3>
+
+    
+
+    <section class="about" id="about-section">
+       
+        <div class="role">
+            
+            <h3><span>Software used : </span> Unreal Engine 5</h3>
+            <h3><span>Languages Used :  </span> Blueprints</h3>
+            <h3><span>Primary Rol(s) :  </span> Gameplay Programming / Technical Designer
+            </h3>
+
+        </div>
+
+
+        <a href="https://orianneg.itch.io/core-defenders" class="Itch"> Itch.io Pages</a>
+    
+    <div class="about-content">
+  
+    <h3><span>About the game</span></h3>
+    <P>
+       
+        Core Defender is a 2-player party game where the goal is to fend off waves of enemies trying to attack the heart of a factory.
+    </P>
+    
+    <p>  
+        To do this, players can build numerous turrets to try to stop the invasion of evil robots. Coordination and strategy are the key to protecting the factory's core and surviving.
+    </p>
+
+    <div class="video-container">
+        <iframe width="819" height="449" src="https://www.youtube.com/embed/JMpewVdi1Ek" title="[Teaser] Core Defenders - ESMA 2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    
+    
+    </div>
+<section class="test">
+    <div class="Details">
+
+        <h1> <span>
+            Details</span> 
+        </h1>
+
+
+        <div class="Det">
+        <h2> <span>
+            ● Game loop</span> 
+        </h2>
+
+        
         <P>
-            Hello! I'm Nathan, a new game developer from France, and I've been passionate about the world of video games since I was young. I've always been
-            interested in development too. The process of creating a video game has always intrigued me, so I decided to study at Esma Game to learn how to become a gameplay programmer.
-            I'm all about teamwork and excellence in game development. I put in the time and effort needed to polish our final product. 
-            My goal is to create games that players will truly enjoy and remember by striving for the highest level of quality. 
+       
+            Pour ce projet, j'ai travaillé sur les 3C du jeu. L'objectif était de concevoir des contrôles et une caméra agréables à utiliser pour deux joueurs.
+La solution trouvée a été de faire en sorte que la caméra suive un objet placé à la médiane des positions des deux joueurs. Elle effectuera également un zoom/dézoom en fonction de la position des joueurs, afin d'améliorer la lisibilité du jeu.
         </P>
         
-        <p>  
-            On this website, you'll discover some of my personal projects and group collaborations, along with game jam creations 
-            that I've had work on. You can also explore my CV and find contact details to reach out to me. 
-            I'm always eager to connect with fellow game enthusiasts and potential collaborators.
-        
-        
-        </p>
-            
-        
-        
+        <div class="image-container" style="display: flex; justify-content: center; gap: 10px; margin-top: 20px; margin-bottom: 20px;gap: 10%;border-radius: 0.8rem;">
+            <img src="IMG/image58.gif" alt="Computer man" style="width:280px;height:400px;">
+            <img src="IMG/image64.gif" alt="Computer man" style="width:280px;height:400px;">
+            <img src="IMG/image63.gif" alt="Computer man" style="width:280px;height:400px;">
         </div>
+    
+
+        <P>
+       
+            Une des contraintes principales était de limiter l   caméra pour éviter qu’elle ne montre des zones hors de la carte, où les level artists n’ont pas travaillé.
+             Elle est donc bloquée par un offset, qui se calcule en fonction de la taille de la carte.
+        </P>
+
+    </div>
+
+    <div class="Det">
+        <h2> <span>
+            ● Caméra</span> 
+        </h2>
+
+        <P>
+       
+            Pour ce projet, j'ai travaillé sur les 3C du jeu. L'objectif était de concevoir des contrôles et une caméra agréables à utiliser pour deux joueurs.
+            La solution trouvée a été de faire en sorte que la caméra suive un objet placé à la médiane des positions des deux joueurs. Elle effectuera également un zoom/dézoom en fonction de la position des joueurs, afin d'améliorer la lisibilité du jeu. 
+        </P>
+
         
-        </section>
+        <img src="IMG/CamGif.gif" alt="Computer man" class="center-image" style="width:853px;height:480px;">
+
+        <P>
+       
+            Une des contraintes principales était de limiter la caméra pour éviter qu’elle ne montre des zones hors de la carte, où les level artists n’ont pas travaillé.
+            Elle est donc bloquée par un offset, qui se calcule en fonction de la taille de la carte.
+            
+        </P>
+
+    </div>
+
+    <div class="Det">
+        <h2> <span>
+            ● Mouvements et Capacité</span> 
+        </h2>
+
+        <P>
+       
+            Pour les Mouvement et les capacité du joueur un gros focus a été fait sur le lancé, 
+            l'objectif etait d'avoir quelque chose de rapide et de préci pour que les joueur puisse positioner les tourelles au emplacement les plus stratégique facilement 
+        </P>
+
+        <P>
+       
+            Pour les Mouvement et les capacité du joueur un gros focus a été fait sur le lancé, 
+            l'objectif etait d'avoir quelque chose de rapide et de préci pour que les joueur puisse positioner les tourelles au emplacement les plus stratégique facilement 
+            
+        </P>
+        <img src="IMG/Throw.gif" alt="Computer man" class="center-image" style="width:853px;height:480px;">
+
+    </div>
+
+
+    <div class="Det">
+        <h2> <span>
+            ● Slimes</span> 
+        </h2>
+
+        <P>
+       
+            Pour les Mouvement et les capacité du joueur un gros focus a été fait sur le lancé, 
+            l'objectif etait d'avoir quelque chose de rapide et de préci pour que les joueur puisse positioner les tourelles au emplacement les plus stratégique facilement 
+        </P>
+
+        <P>
+       
+            Pour les Mouvement et les capacité du joueur un gros focus a été fait sur le lancé, 
+            l'objectif etait d'avoir quelque chose de rapide et de préci pour que les joueur puisse positioner les tourelles au emplacement les plus stratégique facilement 
+            
+        </P>
+        <img src="IMG/image43.gif" alt="Computer man" class="center-image" style="width:568px;height:320px;">
+        <img src="IMG/image45.gif" alt="Computer man" class="center-image" style="width:568px;height:320px;">
+
+        <P>
+       
+            Pour les Mouvement et les capacité du joueur un gros focus a été fait sur le lancé, 
+            l'objectif etait d'avoir quelque chose de rapide et de préci pour que les joueur puisse positioner les tourelles au emplacement les plus stratégique facilement 
+            
+        </P>
+
+    </div>
+    
+    
+    <div class="Det">
+        <h2> <span>
+            ● Event</span> 
+        </h2>
+
+        <P>
+       
+            Pour les Mouvement et les capacité du joueur un gros focus a été fait sur le lancé, 
+            l'objectif etait d'avoir quelque chose de rapide et de préci pour que les joueur puisse positioner les tourelles au emplacement les plus stratégique facilement 
+        </P>
+
+        <P>
+       
+            Pour les Mouvement et les capacité du joueur un gros focus a été fait sur le lancé, 
+            l'objectif etait d'avoir quelque chose de rapide et de préci pour que les joueur puisse positioner les tourelles au emplacement les plus stratégique facilement 
+            
+        </P>
+        <img src="IMG/image65.gif" alt="Computer man" class="center-image" style="width:853px;height:480px;">
+
+    </div>
+    </div>
+</section>
+
+
+
+    </section>
+
+    
+
+    <section class="contact-section" id="contact">
+
+
+        <div class="contact-content">
+    
+            <h2 class="heading"><span>Contact</span> Info</h2>
+    
+            <div class="case">
+                <img src="IMG/phoneLogo.png" alt = "">
+                <h4>Contact</h4>
+                <h3>06 50 84 89 88</h3>
+    
+            </div>
+    
+            <div class="case2">
+                <img src="IMG/mailLogo.png" alt = "">
+                <h4>Email</h4>
+                <h3>peyronnathan84@gmail.com</h3>
+    
+            </div>
+            <div class="case3">
+                <img src="IMG/LocationLogo.png" alt = "">
+                <h4>Address</h4>
+                <h3>84200 Gordes</h3>
+    
+            </div>
+        </div>
+    
+    
+    </section>
+</body>
     
 
 

@@ -359,7 +359,7 @@ font-size: 42px;
 .imagelogo img
 {
     margin-right: 10px;
-    margin-left: 20px;
+    margin-left: 18px;
     text-align: center;
     padding: 20% 20% 20%;
     text-align: center;
@@ -516,9 +516,18 @@ mark[role="engine"] {
     text-align: center;
     color: rgba(255, 255, 255, 0.897);                                                                                                       
     font-size: 52px;
-
+    font-size: 36px !important;
+    padding: 100px 100px 0 !important;
+    margin-left: 0%;
     
  
+}
+.specific-heading {
+    font-size: 60px; /* Taille */
+    color: rgb(255, 255, 255); /* Couleur */
+    font-weight: bold; /* Gras */
+    text-align: center; /* Centrer */
+    margin: 20px 0; /* Espacement */
 }
 
 .img-pro2 {
@@ -700,4 +709,10 @@ mark[role="engine"] {
   .fade-in.visible {
     opacity: 1;
   }
+
+  .img-pro:nth-child(2) {
+    margin-top: 20px; /* Ajoute un espace au-dessus du second bloc uniquement */
+}
+
+
 

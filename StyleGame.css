@@ -1,4 +1,4 @@
-.ilu{
+.ilu {
     width: 100%;
     min-height: 100vh;
     background: rgb(241, 241, 241);
@@ -6,9 +6,143 @@
     align-items: center;
     gap: 7em;
     padding: 30px 12% 0;
-    background-image: url("IMG/image.png");
+    background-image: url("IMG/EN_ImageEndTeaser.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+    z-index: 1;
+}
 
+.ilu::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Fond sombre pour améliorer la lisibilité */
+    z-index: 1;
+}
+
+.home-content2 {
+    position: relative;
+    z-index: 2;
+}
+
+.Main {
+    position: relative;
+    background-color: #242e35; /* Bleu */
+    color: #ffffff; /* Texte blanc */
+    font-size: 16px; /* Ajuster la taille du texte */
+    z-index: 10;
+    opacity: 1 !important;
+    display: block;
+   
+}
+
+.about {
+    display: flex;
+    flex-direction: column; /* Empile les sections verticalement */
+    gap: 20px; /* Ajoute de l'espace entre .about-content et .role */
+    background-image: none ;
+    background-color: rgba(0, 0, 0, 0.932);
+}
+
+.about-content {
+    z-index: 2; /* Le texte doit être au-dessus du fond */
+    background: rgba(0, 0, 0, 0.5); /* Fond sombre pour améliorer la lisibilité */
+    padding: 20px; /* Ajoute de l'espace autour du contenu */
+    border-radius: 8px; /* Coins arrondis pour un design plus moderne */
+}
+
+.role {
+    width: 30%; /* Prend toute la largeur du conteneur */
+    color: white;
+    background: rgba(0, 0, 0, 0.5); /* Fond légèrement transparent */
+    padding: 10px; /* Ajoute de l'espace autour du contenu */
+    border-radius: 8px; /* Coins arrondis */
+    text-align: left;
+    margin-top: -10%;
+    margin-bottom: 5%;
+}
+
+.role h3
+{
+
+    margin-bottom: 5%;
+}
+.video-container {
+    display: flex;
+    justify-content: center;  /* Centre horizontalement */
+    align-items: center;      /* Centre verticalement */
+    height: 50vh;            /* Hauteur de l'écran pour centrer verticalement */
+}
+
+
+
+.test{
+    display: flex;
+    text-align: left;
+  
+    margin-top: 2% ;
+}
+.Details {
+    margin: 0;
+    text-align: left !important; /* Alignement global du texte */
+}
+
+.Details h1 {
+    margin: 0; /* Retirer les marges par défaut */
+    font-size: 36px; /* Ajuster la taille de la police */
+}
+
+.Details h2 {
+    margin-top: 50px; /* Espace au-dessus */
+    font-size: 24px; /* Ajuster la taille de la police si nécessaire */
+}
+
+p {
+    text-align: left !important;
+    font-size: 20px; /* Taille de police */
+    color: #ffffff; /* Couleur du texte */
+    line-height: 1.5; /* Hauteur de ligne */
+    margin: 10px 0; /* Marges */
+}
+
+.center-image {
+
+    display: block;
+    margin: 0 auto; /* Centre horizontalement */
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 0.6rem;
+   
+}
+
+.Det{
+    background: rgba(0, 0, 0, 0.5); /* Fond légèrement transparent */
+    padding: 2%;
+    margin: 1%;
+    border-radius: 0.6rem;
+}
+.contact{
+    color: rgb(0, 0, 0);
+}
+
+.Itch{
+    background-color: orangered;
+    font-size: 50px;
+    margin-bottom: 10%;
+    color: white;
+    padding: 2%;
+    border-radius: 0.8rem;
+    transition: all 0.3s ease; 
+
+}
+
+.Itch:hover{
+     background-color: white;
+     color: orangered;
+     transition: 0.3 ease;
 }
