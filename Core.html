@@ -21,7 +21,7 @@
 
 
     <header class="header">
-        <a href="#" class="logo"> <span> Nathan </span> Peyron </a>
+        <a href="index.html" class="logo"> <span> Nathan </span> Peyron </a>
 
         <nav class="navbar">
 
@@ -94,70 +94,72 @@
 
 
         <div class="Det">
-        <h2> <span>
-            ● Game loop</span> 
-        </h2>
-
+            <h2> <span>
+                ● Game loop</span> 
+            </h2>
         
-        <P>
-       
-            Pour ce projet, j'ai travaillé sur les 3C du jeu. L'objectif était de concevoir des contrôles et une caméra agréables à utiliser pour deux joueurs.
-La solution trouvée a été de faire en sorte que la caméra suive un objet placé à la médiane des positions des deux joueurs. Elle effectuera également un zoom/dézoom en fonction de la position des joueurs, afin d'améliorer la lisibilité du jeu.
-        </P>
+            <p>
+                    The game’s gameplay loop is simple: players must collect scraps from the ground to 
+                    feed the slimes. Once fed, the slimes will drop color kits (the color of the kit matches the slime’s color). When three kits are combined, a turret appears.
+            </p>
+            
+            <div class="image-container" style="display: flex; justify-content: center; gap: 10px; margin-top: 40px; margin-bottom: 40px; gap: 10%; border-radius: 0.8rem;">
+                <figure style="text-align: center;">
+                    <figcaption style="margin-bottom: 10px; color: white;">Scrap-eating slimes</figcaption>
+                    <img src="IMG/image58.gif" alt="Computer man" style="width:280px;height:400px;">
+                </figure>
+                <figure style="text-align: center;">
+                    <figcaption style="margin-bottom: 10px;color: white;">Slimes that spit out a turret kit</figcaption>
+                    <img src="IMG/image64.gif" alt="Computer man" style="width:280px;height:400px;">
+                </figure>
+                <figure style="text-align: center;">
+                    <figcaption style="margin-bottom: 10px;color: white;">Turrets in combat</figcaption>
+                    <img src="IMG/image63.gif" alt="Computer man" style="width:280px;height:400px;">
+                </figure>
+            </div>
         
-        <div class="image-container" style="display: flex; justify-content: center; gap: 10px; margin-top: 20px; margin-bottom: 20px;gap: 10%;border-radius: 0.8rem;">
-            <img src="IMG/image58.gif" alt="Computer man" style="width:280px;height:400px;">
-            <img src="IMG/image64.gif" alt="Computer man" style="width:280px;height:400px;">
-            <img src="IMG/image63.gif" alt="Computer man" style="width:280px;height:400px;">
+            <p>
+                Once these turrets are crafted, 
+                the player can place them anywhere on the map to face the incoming waves of enemies. After the enemies are defeated, they drop scrap, allowing the player to build new kits and create additional turrets.
+            </p>
         </div>
-    
-
-        <P>
-       
-            Une des contraintes principales était de limiter l   caméra pour éviter qu’elle ne montre des zones hors de la carte, où les level artists n’ont pas travaillé.
-             Elle est donc bloquée par un offset, qui se calcule en fonction de la taille de la carte.
-        </P>
-
-    </div>
 
     <div class="Det">
         <h2> <span>
-            ● Caméra</span> 
+            ● Camera</span> 
         </h2>
 
         <P>
-       
-            Pour ce projet, j'ai travaillé sur les 3C du jeu. L'objectif était de concevoir des contrôles et une caméra agréables à utiliser pour deux joueurs.
-            La solution trouvée a été de faire en sorte que la caméra suive un objet placé à la médiane des positions des deux joueurs. Elle effectuera également un zoom/dézoom en fonction de la position des joueurs, afin d'améliorer la lisibilité du jeu. 
+         For this project, I worked on the game’s 3Cs. The goal was to design controls and a camera that are enjoyable to use for two players.
+         The solution we came up with was to have the camera follow an object positioned at the midpoint between the two players. It also zooms in and out based on the players’ positions to improve game readability.
         </P>
 
         
         <img src="IMG/CamGif.gif" alt="Computer man" class="center-image" style="width:853px;height:480px;">
 
         <P>
-       
-            Une des contraintes principales était de limiter la caméra pour éviter qu’elle ne montre des zones hors de la carte, où les level artists n’ont pas travaillé.
-            Elle est donc bloquée par un offset, qui se calcule en fonction de la taille de la carte.
-            
+            One of the main constraints was to limit the camera to prevent it from showing areas outside the map, where the level artists hadn’t worked.
+            It is therefore restricted by an offset, which is calculated based on the size of the map.
         </P>
 
     </div>
 
     <div class="Det">
         <h2> <span>
-            ● Mouvements et Capacité</span> 
+          ● Movement & Ability</span> 
         </h2>
 
         <P>
-       
-            Pour les Mouvement et les capacité du joueur un gros focus a été fait sur le lancé, 
-            l'objectif etait d'avoir quelque chose de rapide et de préci pour que les joueur puisse positioner les tourelles au emplacement les plus stratégique facilement 
+       For the player’s movement and abilities, a major focus was placed on throwing.
+    The goal was to make it fast and precise so that players could easily position turrets in the most strategic spots.
         </P>
 
         <P>
        
-            Pour les Mouvement et les capacité du joueur un gros focus a été fait sur le lancé, 
-            l'objectif etait d'avoir quelque chose de rapide et de préci pour que les joueur puisse positioner les tourelles au emplacement les plus stratégique facilement 
+           We opted for a throw that can be held for more precision, but where the launch distance cannot be chosen, as that would slow down the game too much. 
+           The throw also “snaps” to interactive objects (kit + kit, scrap + slime) to make things easier during the heat of the action..
+
+            
             
         </P>
         <img src="IMG/Throw.gif" alt="Computer man" class="center-image" style="width:853px;height:480px;">
@@ -172,23 +174,26 @@ La solution trouvée a été de faire en sorte que la caméra suive un objet pla
 
         <P>
        
-            Pour les Mouvement et les capacité du joueur un gros focus a été fait sur le lancé, 
-            l'objectif etait d'avoir quelque chose de rapide et de préci pour que les joueur puisse positioner les tourelles au emplacement les plus stratégique facilement 
+           Slimes are also one of the main components of the game, as they are the ones who, as mentioned earlier, transform scraps into kits.
+
+
         </P>
+
+        
+        <img src="IMG/image43.gif" alt="Computer man" class="center-image" style="width:568px;height:320px;">
 
         <P>
        
-            Pour les Mouvement et les capacité du joueur un gros focus a été fait sur le lancé, 
-            l'objectif etait d'avoir quelque chose de rapide et de préci pour que les joueur puisse positioner les tourelles au emplacement les plus stratégique facilement 
+           Once this action is performed, the slime falls asleep, preventing the player from giving it more scraps for a certain period. This forces the player to diversify the kits they use.
             
         </P>
-        <img src="IMG/image43.gif" alt="Computer man" class="center-image" style="width:568px;height:320px;">
         <img src="IMG/image45.gif" alt="Computer man" class="center-image" style="width:568px;height:320px;">
 
         <P>
        
-            Pour les Mouvement et les capacité du joueur un gros focus a été fait sur le lancé, 
-            l'objectif etait d'avoir quelque chose de rapide et de préci pour que les joueur puisse positioner les tourelles au emplacement les plus stratégique facilement 
+            They can also move around during the game to break the player’s routine.
+
+
             
         </P>
 
@@ -202,14 +207,13 @@ La solution trouvée a été de faire en sorte que la caméra suive un objet pla
 
         <P>
        
-            Pour les Mouvement et les capacité du joueur un gros focus a été fait sur le lancé, 
-            l'objectif etait d'avoir quelque chose de rapide et de préci pour que les joueur puisse positioner les tourelles au emplacement les plus stratégique facilement 
+          Finally, the events that can occur after a certain number of rounds are meant to make matches more dynamic and add a random element to each game.
         </P>
 
         <P>
        
-            Pour les Mouvement et les capacité du joueur un gros focus a été fait sur le lancé, 
-            l'objectif etait d'avoir quelque chose de rapide et de préci pour que les joueur puisse positioner les tourelles au emplacement les plus stratégique facilement 
+          These events can range from destroying a set number of turrets to removing all scraps on the map. They were added at the last minute because we needed a new 
+          difficulty element that could be triggered mid-game, when players were starting to get well established in their progression.
             
         </P>
         <img src="IMG/image65.gif" alt="Computer man" class="center-image" style="width:853px;height:480px;">
