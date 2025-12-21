@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content = "width=device-width,initial-scale=1.0">
+    <title>
+        PortFolio
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="StyleGame2.css">
+
+</head>
+<body>
+
+
+
+
+    <header class="header">
+        <a href="index.html" class="logo"> <span> Nathan </span> Peyron </a>
+
+        <nav class="navbar">
+
+           <a href="#" class="active"> Home </a>
+        
+       
+        </nav>
+
+        <a href="#contact" class="contact"> Contact Me </a>
+    </header>
+
+
+    <section class="ilu">
+        <div class="home-content2">
+          
+           
+    
+         
+             
+             
+        </div>
+    
+    
+
+     </section>
+
+    </section>
+
+
+    
+
+    <section class="about" id="about-section">
+       
+        <div class="role">
+            
+            <h3><span>Software used : </span> Unreal Engine 5</h3>
+            <h3><span>Languages Used :  </span> Blueprints / c++</h3>
+            <h3><span>Primary Rol(s) :  </span> Gameplay Programming / Technical Designer
+            </h3>
+
+        </div>
+
+
+        <a href="" class="Itch"> Not Available</a>
+    
+    <div class="about-content">
+  
+    <h3><span>About the game</span></h3>
+    <P>
+       
+        Vague is a single-player exploration and parkour experience in which the player controls a human and their mount to explore a vast sea of clouds. With no defined objective or ending, the game focuses on freedom, movement, and discovery.
+    </P>
+    
+    <p>  
+        there is two gameplay for the game, one with the mount and another without. when you control the mount you have mor speed and with the humais you can go to innasésible places
+    </p>
+
+    <div class="video-container">
+        <iframe width="819" height="449" src="https://www.youtube.com/embed/kSIYagWHZUQ" title="Vague-Prototype" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    
+    
+    
+    </div>
+<section class="test">
+    <div class="Details">
+
+        <h1> <span>
+            Details</span> 
+        </h1>
+
+
+        <div class="Det">
+            <h2> <span>
+                ● Game loop</span> 
+            </h2>
+        
+            <p>
+                The Game Loop is not fully defined yet, but the main principles are decided. The game will be similar to Journey or Sword of the Sea, with a strong focus on exploration and movement.
+                The serpent form is designed for exploring vast fields of clouds, while the human form focuses more on parkour and precise jumps. 
+            </p>
+            
+            <div class="image-container" style="display: flex; justify-content: center; gap: 10px; margin-top: 40px; margin-bottom: 40px; gap: 10%; border-radius: 0.8rem;">
+                <figure style="text-align: center;">
+                    <figcaption style="margin-bottom: 10px; color: white;">Scrap-eating slimes</figcaption>
+                    <img src="IMG/serpent gif.gif" alt="Computer man" style="width:853px;height:480px;">
+                </figure>
+             
+            </div>
+        
+            <p>
+                We want the player to feel the growing bond between the human and the creature, a connection that becomes stronger over time. This evolution could unlock new skills and platforming abilities.
+                The main goal of the game is to follow a massive wall inspired by the Great Wall of China, combining platforming phases with puzzle elements, such as activating bells or other mechanisms.
+               
+            </p>
+        </div>
+
+    <div class="Det">
+        <h2> <span>
+            ● Creature</span> 
+        </h2>
+
+        <P>
+           Speaking about the creature, it has many abilities that humans do not have, such as climbing walls, drifting to take sharp turns, and deploying its wings to hover across gaps.
+            We want the creature to have a very high movement speed. In terms of gameplay, the creature cannot easily move backward and must make wide turns to change direction.
+         
+
+        </P>
+
+          <P>
+            Regarding abilities, we will first focus on wing deployment. In the game, there are air currents that the creature can use to gain momentum depending on the direction of the wind. If the wind blows in the opposite direction, it will slow the creature down.
+            As mentioned before, this ability can also be used to hover, allowing for aerial sequences.
+        </P>
+
+
+        
+        <img src="IMG/SerpentGif.gif" alt="Computer man" class="center-image" style="width:853px;height:480px; margin-bottom: 10%;">
+
+        <P>
+           For Second Ability the creature can drift to turn more easily, similar to the Mario Kart series. By holding the drift position and then releasing it, the player gains a strong speed boost. This ability greatly improves control over the creature and allows players to build up speed, 
+            making the mounted gameplay smoother and more fluid.
+        </P>
+
+         <p>
+          During the first gameplay tests, we found that the creature’s movement felt clunky and not very fun to play. To address this issue, we implemented this mechanic to compensate for the lack of fluidity. After adding it, the gameplay felt significantly better and more enjoyable.
+          However, this mechanic may be adjusted or replaced in the future, as it still feels like something is missing.   
+         </p>
+
+         <img src="IMG/Drift.gif" alt="Computer man" class="center-image" style="width:853px;height:480px;">
+
+         <p>
+                For the last ability I’ll discuss for now, the player can detach from the creature. The key aspect of this ability is that the player retains the creature’s momentum, which helps maintain fluid and dynamic gameplay.
+
+
+
+    </div>
+
+    <div class="Det">
+        <h2> <span>
+          ● Human Form</span> 
+        </h2>
+
+        <P>
+           The human form does not share the same gameplay, as it serves a different purpose. As mentioned earlier, when designing the human gameplay, we focused more on precision, environmental interaction, and jumping.
+
+        </P>
+
+        <P>
+            To achieve this, the player has abilities such as double jumping, riding grind bars similar to skate games, and performing tricks. Currently, 
+            the tricks do not have a direct gameplay purpose, but we plan to make them more useful and have them interact with other mechanics.
+        </P>
+       <div class="image-container" style="display: flex; justify-content: center; gap: 10px; margin-top: 40px; margin-bottom: 10%; gap: 10%; border-radius: 0.8rem;">
+                <figure style="text-align: center;">
+                    <figcaption style="margin-bottom: 10px; color: white;">Double Jump & tricks</figcaption>
+                    <img src="IMG/jump.gif" alt="Computer man" style="width:680px;height:400px;">
+                </figure>
+                <figure style="text-align: center;">
+                    <figcaption style="margin-bottom: 10px;color: white;">Grind</figcaption>
+                    <img src="IMG/Grind.gif" alt="Computer man" style="width:680px;height:400px;">
+                </figure>
+            </div>
+
+            
+        <P>
+            The second major ability for the player in human form is grappling. The player can grapple onto walls to gain a small speed boost and help navigate sharp turns, similar to how the creature uses drifting.
+             The downside is that not all walls are grapplable, so this ability can only be used in specific situations.
+        </P>
+
+        <img src="IMG/Cable.gif" alt="Computer man" class="center-image" style="width:853px;height:480px;">
+    </div>
+
+
+    <div class="Det">
+        <h2> <span>
+            ● Serpent Form (Mount)</span> 
+        </h2>
+
+        <P>
+       
+           Slimes are also one of the main components of the game, as they are the ones who, as mentioned earlier, transform scraps into kits.
+
+
+        </P>
+
+        
+        <img src="IMG/image43.gif" alt="Computer man" class="center-image" style="width:568px;height:320px;">
+
+        <P>
+       
+           Once this action is performed, the slime falls asleep, preventing the player from giving it more scraps for a certain period. This forces the player to diversify the kits they use.
+            
+        </P>
+        <img src="IMG/image45.gif" alt="Computer man" class="center-image" style="width:568px;height:320px;">
+
+        <P>
+       
+            They can also move around during the game to break the player’s routine.
+
+
+            
+        </P>
+
+    </div>
+    
+    
+    <div class="Det">
+        <h2> <span>
+            ● Environmental Mechanics</span> 
+        </h2>
+
+        <P>
+       
+          Finally, the events that can occur after a certain number of rounds are meant to make matches more dynamic and add a random element to each game.
+        </P>
+
+        <P>
+       
+          These events can range from destroying a set number of turrets to removing all scraps on the map. They were added at the last minute because we needed a new 
+          difficulty element that could be triggered mid-game, when players were starting to get well established in their progression.
+            
+        </P>
+        <img src="IMG/image65.gif" alt="Computer man" class="center-image" style="width:853px;height:480px;">
+
+    </div>
+    </div>
+</section>
+
+
+
+    </section>
+
+    
+
+    <section class="contact-section" id="contact">
+
+
+        <div class="contact-content">
+    
+            <h2 class="heading"><span>Contact</span> Info</h2>
+    
+            <div class="case">
+                <img src="IMG/phoneLogo.png" alt = "">
+                <h4>Contact</h4>
+                <h3>06 50 84 89 88</h3>
+    
+            </div>
+    
+            <div class="case2">
+                <img src="IMG/mailLogo.png" alt = "">
+                <h4>Email</h4>
+                <h3>peyronnathan84@gmail.com</h3>
+    
+            </div>
+            <div class="case3">
+                <img src="IMG/LocationLogo.png" alt = "">
+                <h4>Address</h4>
+                <h3>84200 Gordes</h3>
+    
+            </div>
+        </div>
+    
+    
+    </section>
+</body>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>

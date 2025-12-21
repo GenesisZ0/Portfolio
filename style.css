@@ -428,9 +428,13 @@ font-size: 42px;
 
 }
 
+.specific-heading {
+  padding-top: 15%;
+}
+
 .projects-content h2{
 
-   
+
     text-align: center;
     color: rgba(255, 255, 255, 0.897);                                                                                                       
     font-size: 52px;
