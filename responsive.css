@@ -77,3 +77,11 @@ html{scroll-behavior:smooth;scroll-padding-top:90px}
   .burger ~ .navbar a{margin:0;padding:16px 5%;font-size:20px}
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+
+/* ===== Transition entre pages (fondu doux, sans flash blanc) ===== */
+@keyframes pageIn{from{opacity:0}to{opacity:1}}
+@keyframes darkIn{from{background-color:#111}to{background-color:rgba(17,17,17,0)}}
+html{animation:darkIn .6s ease-out;transition:background-color .4s ease}
+body{animation:pageIn .6s ease-out}
+html.leaving{background-color:#111}
+html.leaving body{opacity:0;transition:opacity .4s ease}

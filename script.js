@@ -12,3 +12,22 @@ document.addEventListener('DOMContentLoaded', () => {
   }), { threshold: 0.05 });
   items.forEach(el => io.observe(el));
 });
+
+// Transition entre pages : fondu de sortie avant de changer de page
+(() => {
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.addEventListener('click', e => {
+    const a = e.target.closest('a[href]');
+    if (!a || e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    if (a.target === '_blank' || a.hasAttribute('download') || !a.getAttribute('href')) return;
+    const same = a.protocol === location.protocol && a.host === location.host;
+    if (!same || a.pathname === location.pathname) return;   // externe ou simple ancre : pas de fondu
+    e.preventDefault();
+    document.documentElement.classList.add('leaving');
+    setTimeout(() => { location.href = a.href; }, reduce ? 0 : 400);
+  });
+  // Bouton "retour" du navigateur : on retire l'état de sortie
+  window.addEventListener('pageshow', e => {
+    if (e.persisted) document.documentElement.classList.remove('leaving');
+  });
+})();
