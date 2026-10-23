@@ -1,57 +1,14 @@
-document.addEventListener('DOMContentLoaded', function() {
-  const fadeElements = document.querySelectorAll('.fade-in');
-  const aboutSectionLink = document.querySelector('a[href="#about-section"]');
-  const skillLink = document.querySelector('a[href="#skill"]');
-  const projectLink = document.querySelector('a[href="#project"]');
-  const contactLink = document.querySelector('a[href="#contact"]');
-  const aboutSection = document.querySelector('#about-section');
-  const skillElement = document.querySelector('#skill');
-  const projectSection = document.querySelector('#project');
-  const contactSection = document.querySelector('#contact');
-
-  function checkFade() {
-    fadeElements.forEach(function(element) {
-      const position = element.getBoundingClientRect();
-      const windowHeight = window.innerHeight;
-
-      if (position.top < windowHeight && position.bottom >= 0) {
-        if (!element.classList.contains('visible')) {
-          element.classList.add('visible');
-        }
-      } else {
-        element.classList.remove('visible');
-      }
-    });
+document.addEventListener('DOMContentLoaded', () => {
+  const nav = document.querySelector('.navbar'), burger = document.querySelector('.burger');
+  if (nav && burger) {
+    const toggle = o => { nav.classList.toggle('open', o); burger.setAttribute('aria-expanded', o); };
+    burger.addEventListener('click', () => toggle(!nav.classList.contains('open')));
+    nav.addEventListener('click', e => { if (e.target.tagName === 'A') toggle(false); });
   }
-
-  function smoothScrollTo(element, offset) {
-    const scrollPosition = element.getBoundingClientRect().top + window.scrollY;
-    window.scrollTo({
-      top: scrollPosition - offset,
-      behavior: 'smooth'
-    });
-  }
-
-  aboutSectionLink.addEventListener('click', function(e) {
-      e.preventDefault();
-      aboutSection.scrollIntoView({ behavior: 'smooth' });
-  });
-
-  skillLink.addEventListener('click', function(e) {
-      e.preventDefault();
-      smoothScrollTo(skillElement, 65);
-  });
-
-  projectLink.addEventListener('click', function(e) {
-      e.preventDefault();
-      projectSection.scrollIntoView({ behavior: 'smooth' });
-  });
-
-  contactLink.addEventListener('click', function(e) {
-      e.preventDefault();
-      contactSection.scrollIntoView({ behavior: 'smooth' });
-  });
-
-  checkFade();
-  window.addEventListener('scroll', checkFade);
+  const items = document.querySelectorAll('.fade-in');
+  if (!('IntersectionObserver' in window)) { items.forEach(el => el.classList.add('visible')); return; }
+  const io = new IntersectionObserver(es => es.forEach(en => {
+    if (en.isIntersecting) { en.target.classList.add('visible'); io.unobserve(en.target); }
+  }), { threshold: 0.05 });
+  items.forEach(el => io.observe(el));
 });

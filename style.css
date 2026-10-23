@@ -7,7 +7,6 @@
     list-style: none;
 }
 .header{
-   
     position: fixed;
     top: 0;
     left: 0;
@@ -19,27 +18,22 @@
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    
-
 }
 .logo{
-        font-size: 25px;
-        color: white;
-        font-weight: 600;
-        transition: 0.3s ease;
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
 }
-
 .logo:hover{
     color: orangered;
-    text-shadow: 0 0 25px orangered,
-                 0 0 50px orangered;
-    transform: scale(1.1);             
+    text-shadow: 0 0 25px orangered, 0 0 50px orangered;
+    transform: scale(1.1);
 }
 span{
     color: orangered;
 }
 .navbar a{
-    
     font-size: 18px;
     color: white;
     font-weight: 500;
@@ -47,13 +41,10 @@ span{
     border-bottom: 3px solid transparent;
     transition: 0.3 ease;
 }
-
 .navbar a:hover,
 .navbar a.active{
     color: orangered;
-    
 }
-
 .contact{
     padding: 10px 28px;
     background-color: white;
@@ -65,19 +56,14 @@ span{
     font-weight: 600;
     transition: 0.3s ease;
 }
-
 .contact:hover{
     background-color: orangered;
     box-shadow: 0 0 25px orangered;
     color: white;
-
 }
-
-
 .body {
-    transition: ease-in-out 0.5s; 
+    transition: ease-in-out 0.5s;
 }
-
 .home{
     width: 100%;
     min-height: 100vh;
@@ -92,17 +78,14 @@ span{
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 .home-content{
     max-width: 800px;
 }
-
 .home-content h3{
     font-size: 42px;
     opacity: 0;
     animation: fadeIn 1s forwards;
 }
-
 .home-content h1{
     font-size: 62px;
     line-height: 1.2;
@@ -110,7 +93,6 @@ span{
     animation: slideInTop 1s forwards;
     animation-delay: 0.5s;
 }
-
 .home-content p{
     font-size: 18px;
     margin: 25px 0 30px;
@@ -118,52 +100,35 @@ span{
     animation: slideInTop 1s forwards;
     animation-delay: 0.8s;
 }
-
 .btn-box {
     opacity: 0;
     animation: fadeIn 1s forwards;
     animation-delay: 1s;
 }
-
 .btn-cv {
     opacity: 0;
     animation: fadeIn 1s forwards;
     animation-delay: 1.2s;
 }
-
 .img-box img{
     opacity: 0;
     transform: translate(60.4%,5px);
     animation: fadeIn 1s forwards;
     animation-delay: 1s;
 }
-
 @keyframes slideInTop {
-    0% {
-        opacity: 0;
-        transform: translateY(100%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    0% { opacity: 0; transform: translateY(100%); }
+    100% { opacity: 1; transform: translateY(0); }
 }
-
 @keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
-
 .btn-box{
     width: 345px;
     display: flex;
     gap: 2em;
 }
-
 .btn-1{
     padding: 15px 28px;
     background-color: black;
@@ -176,13 +141,11 @@ span{
     transition: 0.3 ease;
     cursor: pointer;
 }
-
 .btn-1:hover{
     background-color: white;
     color: black;
     border: 2px solid black;
 }
-
 .btn-2{
     padding: 15px 28px;
     background: orangered;
@@ -194,21 +157,12 @@ span{
     font-weight: 600;
     transition: 0.3s ease;
     cursor: pointer;
-    
-    
-
 }
-
 .btn-2:hover{
     background-color:white ;
     color: orangered;
-  
 }
-
-
 .btn-cv{
-
-   
     text-align: center;
     padding: 15px 28px;
     background-color: orangered;
@@ -220,42 +174,30 @@ span{
     font-weight: 600;
     cursor: pointer;
     display: flex;
-    white-space: nowrap; 
-    transition: background-color 0.3s ease; 
+    white-space: nowrap;
+    transition: background-color 0.3s ease;
     border: 2px solid black;
-
- 
 }
-
 .btn-cv:hover
 {
     background-color: white;
     color: orangered;
     border: 2px solid black;
 }
-
-
 .img-box img{
     width: 550px;
     height: auto;
-   
-    
 }
-
 ::-webkit-scrollbar{
     width: 15px;
-
 }
-
 ::-webkit-scrollbar-thumb{
     background-color: orangered;
 }
-
 ::-webkit-scrollbar-track{
     background-color: rgba(0, 0, 0, 0.6);
     width: 50px;
 }
-
 .about{
     background-image: url("IMG/unreal1.jpg");
     background-color:rgb(185, 185, 185) ;
@@ -264,32 +206,22 @@ span{
     align-items: center;
     padding: 12% 8% 19.7%;
     gap: 10em;
-  
-
 }
 .about-content h2{
-text-align: left;
-color: white;                                                                                                       
-font-size: 42px;
+    text-align: left;
+    color: white;
+    font-size: 42px;
 }
-
 .about-content h3{
     font-size: 62px;
     color: white;
 }
-
-
 .about-content p{
     color: white;
     font-size: 20px;
     margin: 2em 0 4em;
     line-height: 1.5;
-    
 }
-
-
-
-
 .skill{
     background-image: url("IMG/cool-background.png");
     background-attachment: fixed;
@@ -299,63 +231,33 @@ font-size: 42px;
     display: flex;
     padding: 16% 8% 10%;
     gap: 10em;
-
 }
-
-
-
 .skill-content h2{
-
-
     text-align: left;
-    color: white;                                                                                                       
+    color: white;
     font-size: 33px;
- 
-    
 }
-
 .skill-content h3{
-    
     text-align: left;
-    color: white;                                                                                                       
+    color: white;
     font-size: 33px;
- 
-    
 }
-
 .skill-content h4{
-    
     text-align: left;
-    color: white;                                                                                                       
+    color: white;
     font-size: 33px;
- 
-    
 }
-
 .skill-content h5{
-    
     text-align: left;
-    color: white;                                                                                                       
+    color: white;
     font-size: 33px;
- 
-    
 }
-
-
-
 .skill-content{
-
-   margin: -200px 0 100px ;
-
+    margin: -200px 0 100px ;
 }
-
 .skill-content h2{
-    
     margin-bottom: 150px;
-    
 }
-
-
 .imagelogo img
 {
     margin-right: 10px;
@@ -366,262 +268,168 @@ font-size: 42px;
     width: 250px;
     height: auto;
 }
-
-
-.imagelogo h2 
+.imagelogo h2
 {
-  
     margin-left: 105px;
     margin-bottom: 50px;
 }
-
 .imagelogo h3
 {
-    
     margin-left: 35px;
     margin-bottom: 50px;
 }
-
 .imagelogo h4
 {
-    
     margin-left: 85px;
     margin-bottom: 50px;
 }
-
 .imagelogo h5
 {
-    
     margin-left: 105px;
     margin-bottom: 50px;
 }
-
 .imagelogo
 {
-   
     margin-right: 100px;
     background-color: rgb(66, 66, 66);
     border-radius: 5%;
     display: inline-block;
     transition: 0.5s ease-out;
-    
 }
-
-
 .imagelogo:hover
 {
     background-color: orangered;
     transform: scale(1.1);
 }
-
 .imagelogo:first-child {
-    margin-left: 65px; 
+    margin-left: 65px;
 }
-
-
 .projects{
-
-
     background-color:rgb(17, 17, 17) ;
     padding: 12% 8% 10%;
     gap: 10em;
-
 }
-
 .specific-heading {
   padding-top: 15%;
 }
-
 .projects-content h2{
-
-
     text-align: center;
-    color: rgba(255, 255, 255, 0.897);                                                                                                       
+    color: rgba(255, 255, 255, 0.897);
     font-size: 52px;
-
-    
- 
 }
-
-
 .img-container {
-    display: flex; 
-  
+    display: flex;
 }
-
 .img-pro {
-   
-    display: inline-block; 
-    margin-right: 305px; 
+    display: inline-block;
+    margin-right: 305px;
 }
-
 .img-pro:last-child {
-    margin-right: 0; 
+    margin-right: 0;
 }
-
-
-
 .img-pro img{
-   border-collapse: separate; 
+   border-collapse: separate;
    padding: 100px 0 10px;
    width: 325px;
    height: auto;
    border-radius: 5%;
    transition: transform 0.5s;
    transform: scale(1.3);
- 
-   
-  
 }
-
-
 .img-pro img:hover{
     transform: scale(1.45);
-
-    }
-
+}
 .img-pro2 img:hover
 {
     transform: scale(1.2);
 }
-
 .cpp{
     padding: 50px 0 0;
     text-align: center;
     font-size: 1vw;
     color: beige
-
-
-    
 }
-
-
-
-
 mark[role="cpp"] {
     color: white;
     background-color: rgb(21, 158, 221);
-    border-radius: 5px; 
+    border-radius: 5px;
     padding: 2px 4px
-  }
-
+}
 mark[role="engine"] {
     color: white;
     background-color: rgb(221, 21, 21);
     border-radius: 5px;
     padding: 2px 4px
 }
-
-
-
 .projects-content h3{
-
     padding: 100px 100px 0 ;
     text-align: center;
-    color: rgba(255, 255, 255, 0.897);                                                                                                       
+    color: rgba(255, 255, 255, 0.897);
     font-size: 52px;
     font-size: 36px !important;
     padding: 100px 100px 0 !important;
     margin-left: 0%;
-    
- 
 }
 .specific-heading {
-    font-size: 60px; /* Taille */
-    color: rgb(255, 255, 255); /* Couleur */
-    font-weight: bold; /* Gras */
-    text-align: center; /* Centrer */
-    margin: 20px 0; /* Espacement */
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
 }
-
 .img-pro2 {
-   
-    display: inline-block; 
-    margin-right: 100px; 
-    margin-left: 275px; 
-   
+    display: inline-block;
+    margin-right: 100px;
+    margin-left: 275px;
 }
-
 .img-pro2:last-child {
-    margin-right: 0; 
+    margin-right: 0;
 }
-
-
-
 .img-pro2 img{
-
-   border-collapse: separate; 
+   border-collapse: separate;
    padding: 100px 0 10px;
    width: 325px;
    height: auto;
    border-radius: 5%;
    transition: transform 0.5s;
-   
-  
 }
-
 .contact-section
 {
     background-color: rgb(231, 231, 231);
     padding: 50px 50px 50px;
     text-align: center;
-    
 }
-
 .contact-content h2
 {
-  
-  
     font-size: 45px ;
-
     text-align: center;
     margin-bottom: 100px;
-   
 }
-
-
 .case{
-    
     display: inline-block;
     background-color:  rgb(17, 17, 17) ;
     border-radius: 5%;
     margin-right: 75px;
-   
-  
-   
 }
 .case2{
-    
     display: inline-block;
     background-color: rgb(17, 17, 17) ;
     border-radius: 5%;
     margin-right: 75px;
-   
-  
-   
 }
 .case3{
-    
     display: inline-block;
     background-color:  rgb(17, 17, 17) ;
     border-radius: 5%;
-   
-  
-   
 }
-
-
 .case img
 {
     margin-top: 40px;
-   
     margin-left: 100px;
     margin-right: 50px;
     width: 50px;
     height: auto;
     transform: translate(-45px, 25px);
-    
-   
 }
 .case h4{
     font-size: 30px;
@@ -631,38 +439,30 @@ mark[role="engine"] {
     text-align: center;
     transform: translateX(-38px);
 }
-
 .case h3{
     margin-bottom: 40px;
     margin-right: 100px;
     display: block;
     color: aliceblue;
     margin-left: 145px;
-    
 }
-
 .case2 img
 {
     margin-top: 40px;
-   
     margin-left: 100px;
     margin-right: 50px;
     width: 50px;
     height: auto;
     transform: translate(-45px, 25px);
-
 }
 .case2 h4{
-  
     font-size: 30px;
     margin-right: 100px;
     display: inline-block;
     color: aliceblue;
     transform: translateX(-76px);
 }
-
 .case2 h3{
-
     font-size: 18px;
     margin-bottom: 40px;
     margin-right: 100px;
@@ -670,10 +470,7 @@ mark[role="engine"] {
     color: aliceblue;
     margin-left: 50px;
     transform: translateX(85px);
-   
 }
-
-
 .case3 img
 {
     margin-top: 40px;
@@ -682,9 +479,6 @@ mark[role="engine"] {
     margin-right: 50px;
     width: 50px;
     height: auto;
-  
-    
-   
 }
 .case3 h4{
     font-size: 30px;
@@ -692,31 +486,21 @@ mark[role="engine"] {
     display: inline-block;
     color: aliceblue;
     transform: translateX(-32px);
-    
 }
-
 .case3 h3{
     margin-bottom: 40px;
     margin-right: 100px;
     display: block;
     color: aliceblue;
     margin-left: 145px;
-    
-   
 }
-
 .fade-in {
     opacity: 0;
     transition: opacity 1.5s ease-in-out;
-  }
-  
-  .fade-in.visible {
-    opacity: 1;
-  }
-
-  .img-pro:nth-child(2) {
-    margin-top: 20px; /* Ajoute un espace au-dessus du second bloc uniquement */
 }
-
-
-
+.fade-in.visible {
+    opacity: 1;
+}
+.img-pro:nth-child(2) {
+    margin-top: 20px;
+}

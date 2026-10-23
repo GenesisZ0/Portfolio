@@ -1,289 +1,166 @@
 <!DOCTYPE html>
-<html>
-
-
-
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-    content = "width=device-width,initial-scale=1.0">
-    <title>
-        PortFolio
-    </title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>PortFolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="StyleGame.css">
-
+    <link rel="stylesheet" href="responsive.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-
-
-
-
     <header class="header">
         <a href="index.html" class="logo"> <span> Nathan </span> Peyron </a>
-
         <nav class="navbar">
-
            <a href="#" class="active"> Home </a>
-        
-       
         </nav>
-
         <a href="#contact" class="contact"> Contact Me </a>
     </header>
 
-
     <section class="ilu">
-        <div class="home-content2">
-          
-           
-    
-         
-             
-             
-        </div>
-    
-    
-
-     </section>
-
+        <div class="home-content2"></div>
     </section>
 
-
-    
-
     <section class="about" id="about-section">
-       
         <div class="role">
-            
             <h3><span>Software used : </span> Unreal Engine 5</h3>
             <h3><span>Languages Used :  </span> Blueprints</h3>
             <h3><span>Primary Rol(s) :  </span> Gameplay Programming / Technical Designer
             </h3>
-
         </div>
 
-
         <a href="https://orianneg.itch.io/core-defenders" class="Itch"> Itch.io Pages</a>
-    
+
     <div class="about-content">
-  
     <h3><span>About the game</span></h3>
     <P>
-       
         Core Defender is a 2-player party game where the goal is to fend off waves of enemies trying to attack the heart of a factory.
     </P>
-    
-    <p>  
+    <p>
         To do this, players can build numerous turrets to try to stop the invasion of evil robots. Coordination and strategy are the key to protecting the factory's core and surviving.
     </p>
-
     <div class="video-container">
-        <iframe width="819" height="449" src="https://www.youtube.com/embed/JMpewVdi1Ek" title="[Teaser] Core Defenders - ESMA 2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="819" height="449" src="https://www.youtube.com/embed/JMpewVdi1Ek" title="[Teaser] Core Defenders - ESMA 2024" frameborder="0" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
-    
-    
     </div>
 <section class="test">
     <div class="Details">
-
         <h1> <span>
-            Details</span> 
+            Details</span>
         </h1>
-
 
         <div class="Det">
             <h2> <span>
-                ● Game loop</span> 
+                ● Game loop</span>
             </h2>
-        
             <p>
-                    The game’s gameplay loop is simple: players must collect scraps from the ground to 
+                    The game’s gameplay loop is simple: players must collect scraps from the ground to
                     feed the slimes. Once fed, the slimes will drop color kits (the color of the kit matches the slime’s color). When three kits are combined, a turret appears.
             </p>
-            
             <div class="image-container" style="display: flex; justify-content: center; gap: 10px; margin-top: 40px; margin-bottom: 40px; gap: 10%; border-radius: 0.8rem;">
                 <figure style="text-align: center;">
                     <figcaption style="margin-bottom: 10px; color: white;">Scrap-eating slimes</figcaption>
-                    <img src="IMG/image58.gif" alt="Computer man" style="width:280px;height:400px;">
+                    <img loading="lazy" src="IMG/image58.gif" alt="Computer man" style="width:280px;height:400px;">
                 </figure>
                 <figure style="text-align: center;">
                     <figcaption style="margin-bottom: 10px;color: white;">Slimes that spit out a turret kit</figcaption>
-                    <img src="IMG/image64.gif" alt="Computer man" style="width:280px;height:400px;">
+                    <img loading="lazy" src="IMG/image64.gif" alt="Computer man" style="width:280px;height:400px;">
                 </figure>
                 <figure style="text-align: center;">
                     <figcaption style="margin-bottom: 10px;color: white;">Turrets in combat</figcaption>
-                    <img src="IMG/image63.gif" alt="Computer man" style="width:280px;height:400px;">
+                    <img loading="lazy" src="IMG/image63.gif" alt="Computer man" style="width:280px;height:400px;">
                 </figure>
             </div>
-        
             <p>
-                Once these turrets are crafted, 
+                Once these turrets are crafted,
                 the player can place them anywhere on the map to face the incoming waves of enemies. After the enemies are defeated, they drop scrap, allowing the player to build new kits and create additional turrets.
             </p>
         </div>
 
     <div class="Det">
         <h2> <span>
-            ● Camera</span> 
+            ● Camera</span>
         </h2>
-
         <P>
          For this project, I worked on the game’s 3Cs. The goal was to design controls and a camera that are enjoyable to use for two players.
          The solution we came up with was to have the camera follow an object positioned at the midpoint between the two players. It also zooms in and out based on the players’ positions to improve game readability.
         </P>
-
-        
-        <img src="IMG/CamGif.gif" alt="Computer man" class="center-image" style="width:853px;height:480px;">
-
+        <img loading="lazy" src="IMG/CamGif.gif" alt="Computer man" class="center-image" style="width:853px;height:480px;">
         <P>
             One of the main constraints was to limit the camera to prevent it from showing areas outside the map, where the level artists hadn’t worked.
             It is therefore restricted by an offset, which is calculated based on the size of the map.
         </P>
-
     </div>
 
     <div class="Det">
         <h2> <span>
-          ● Movement & Ability</span> 
+          ● Movement & Ability</span>
         </h2>
-
         <P>
        For the player’s movement and abilities, a major focus was placed on throwing.
     The goal was to make it fast and precise so that players could easily position turrets in the most strategic spots.
         </P>
-
         <P>
-       
-           We opted for a throw that can be held for more precision, but where the launch distance cannot be chosen, as that would slow down the game too much. 
+           We opted for a throw that can be held for more precision, but where the launch distance cannot be chosen, as that would slow down the game too much.
            The throw also “snaps” to interactive objects (kit + kit, scrap + slime) to make things easier during the heat of the action..
-
-            
-            
         </P>
-        <img src="IMG/Throw.gif" alt="Computer man" class="center-image" style="width:853px;height:480px;">
-
+        <img loading="lazy" src="IMG/Throw.gif" alt="Computer man" class="center-image" style="width:853px;height:480px;">
     </div>
-
 
     <div class="Det">
         <h2> <span>
-            ● Slimes</span> 
+            ● Slimes</span>
         </h2>
-
         <P>
-       
            Slimes are also one of the main components of the game, as they are the ones who, as mentioned earlier, transform scraps into kits.
-
-
         </P>
-
-        
-        <img src="IMG/image43.gif" alt="Computer man" class="center-image" style="width:568px;height:320px;">
-
+        <img loading="lazy" src="IMG/image43.gif" alt="Computer man" class="center-image" style="width:568px;height:320px;">
         <P>
-       
            Once this action is performed, the slime falls asleep, preventing the player from giving it more scraps for a certain period. This forces the player to diversify the kits they use.
-            
         </P>
-        <img src="IMG/image45.gif" alt="Computer man" class="center-image" style="width:568px;height:320px;">
-
+        <img loading="lazy" src="IMG/image45.gif" alt="Computer man" class="center-image" style="width:568px;height:320px;">
         <P>
-       
             They can also move around during the game to break the player’s routine.
-
-
-            
         </P>
-
     </div>
-    
-    
+
     <div class="Det">
         <h2> <span>
-            ● Event</span> 
+            ● Event</span>
         </h2>
-
         <P>
-       
           Finally, the events that can occur after a certain number of rounds are meant to make matches more dynamic and add a random element to each game.
         </P>
-
         <P>
-       
-          These events can range from destroying a set number of turrets to removing all scraps on the map. They were added at the last minute because we needed a new 
+          These events can range from destroying a set number of turrets to removing all scraps on the map. They were added at the last minute because we needed a new
           difficulty element that could be triggered mid-game, when players were starting to get well established in their progression.
-            
         </P>
-        <img src="IMG/image65.gif" alt="Computer man" class="center-image" style="width:853px;height:480px;">
-
+        <img loading="lazy" src="IMG/image65.gif" alt="Computer man" class="center-image" style="width:853px;height:480px;">
     </div>
     </div>
 </section>
-
-
-
     </section>
-
-    
 
     <section class="contact-section" id="contact">
-
-
         <div class="contact-content">
-    
             <h2 class="heading"><span>Contact</span> Info</h2>
-    
             <div class="case">
-                <img src="IMG/phoneLogo.png" alt = "">
+                <img loading="lazy" src="IMG/phoneLogo.png" alt = "">
                 <h4>Contact</h4>
                 <h3>06 50 84 89 88</h3>
-    
             </div>
-    
             <div class="case2">
-                <img src="IMG/mailLogo.png" alt = "">
+                <img loading="lazy" src="IMG/mailLogo.png" alt = "">
                 <h4>Email</h4>
                 <h3>peyronnathan84@gmail.com</h3>
-    
             </div>
             <div class="case3">
-                <img src="IMG/LocationLogo.png" alt = "">
+                <img loading="lazy" src="IMG/LocationLogo.png" alt = "">
                 <h4>Address</h4>
                 <h3>84200 Gordes</h3>
-    
             </div>
         </div>
-    
-    
     </section>
 </body>
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</body>
+</html>

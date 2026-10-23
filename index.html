@@ -1,176 +1,108 @@
 <!DOCTYPE html>
-<html>
-
-
-
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-    content = "width=device-width,initial-scale=1.0">
-    <title>
-        PortFolio
-    </title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>PortFolio</title>
     <link rel="stylesheet" href="style.css">
-    >
-
+    <link rel="stylesheet" href="responsive.css">
+    <script src="script.js" defer></script>
 </head>
-
-    
 <body>
- 
     <header class="header">
         <a href="#" class="logo"> <span> Nathan </span> Peyron </a>
-
+        <button class="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
         <nav class="navbar">
-
            <a href="#" class="active"> PortFolio </a>
            <a href="#about-section" > About me </a>
            <a href="#skill"> Skills </a>
            <a href="#project"> Projects</a>
-          
-       
+           <a href="#contact" class="only-mobile">Contact</a>
         </nav>
-
         <a href="#contact" class="contact">Contact Me</a>
-
     </header>
-
 
  <section class="home">
     <div class="home-content">
-        <h3>
-            hi
-        </h3>
-
+        <h3>hi</h3>
         <h1>I'm <span>Nathan<br></span>Gameplay Programmer</h1>
-
-        <p>
-         </p>
-
+        <p></p>
          <div class="btn-box">
-         
-            <a class="btn-cv" href="cv.pdf" >Download cv</a> 
-            
+            <a class="btn-cv" href="cv.pdf" >Download cv</a>
          </div>
-
-         
-         
     </div>
-
-
     <div class="img-box">
         <img src="IMG/profil3.png" alt="">
     </div>
-
  </section>
 
-
 <section class="about" id="about-section">
-
 <div class="about-content fade-in">
 <h2 class="heading"><span>About Me</span></h2>
 <h3><span>Gameplay Developer</span></h3>
 <P>
     Hello! I'm Nathan, a new game developer from France, and I've been passionate about the world of video games since I was young. I've always been
     interested in development too. The process of creating a video game has always intrigued me, so I decided to study at Esma Game to learn how to become a gameplay programmer.
-    I'm all about teamwork and excellence in game development. I put in the time and effort needed to polish our final product. 
-    My goal is to create games that players will truly enjoy and remember by striving for the highest level of quality. 
+    I'm all about teamwork and excellence in game development. I put in the time and effort needed to polish our final product.
+    My goal is to create games that players will truly enjoy and remember by striving for the highest level of quality.
 </P>
-
-<p>  
-    On this website, you'll discover some of my personal projects and group collaborations, along with game jam creations 
-    that I've had work on. You can also explore my CV and find contact details to reach out to me. 
+<p>
+    On this website, you'll discover some of my personal projects and group collaborations, along with game jam creations
+    that I've had work on. You can also explore my CV and find contact details to reach out to me.
     I'm always eager to connect with fellow game enthusiasts and potential collaborators.
-
-
 </p>
-    
-
-
 </div>
-
 </section>
-   
-<section class="skill" id="skill"> 
 
+<section class="skill" id="skill">
  <div class="skill-content fade-in">
     <h2 class="heading"> <span>Profesional Skills</span></h2>
-    
      <div class="in">
-
         <div class="imagelogo">
-
-            <img  src="IMG/cpp.png" alt="" >  
+            <img loading="lazy" src="IMG/cpp.png" alt="" >
             <h2> c++ </h2>
-
         </div>
-       
         <div class="imagelogo">
-
-            <img  src="IMG/ue5.png" alt="" >  
+            <img loading="lazy" src="IMG/ue5.png" alt="" >
             <h3> Unreal Engine </h3>
-
         </div>
-
-        
         <div class="imagelogo">
-
-            <img  src="IMG/git.png" alt="" >  
+            <img loading="lazy" src="IMG/git.png" alt="" >
             <h4> GitHub </h4>
-
         </div>
-
         <div class="imagelogo">
-
-            <img  src="IMG/i.png" alt="" >  
+            <img loading="lazy" src="IMG/i.png" alt="" >
             <h5> Unity </h5>
-
         </div>
-
-
     </div>
-
-
  </div>
-
-
 </section>
-
 
 <section class="projects" id="project">
     <div class="projects-content fade-in">
         <h2 class="heading"><span>Teams</span> Projects</h2>
-   
-
-
-
-
-        
         <div class="img-container">
             <div class="img-pro">
                 <a href="https://quentin-allmn.itch.io/mara">
-                <img src="IMG/escape.png" alt="">
+                <img loading="lazy" src="IMG/escape.png" alt="">
                  </a>
                 <div class="cpp">
                     <mark role="cpp">Blueprint</mark>
                     <mark role="engine">Unreal 5</mark>
                 </div>
             </div>
-
             <div class="img-pro">
                 <a href="Core.html">
-                <img src="IMG/LogoCore.png" alt="">
+                <img loading="lazy" src="IMG/LogoCore.png" alt="">
                 </a>
                 <div class="cpp">
                      <mark role="cpp">Blueprint</mark>
                      <mark role="engine">Unreal 5</mark>
                 </div>
             </div>
-
-            <div class="img-pro" style="margin-top: 20px;"> 
+            <div class="img-pro" style="margin-top: 20px;">
                 <a href="">
-                    <img src="IMG/Maze.jpg" alt="Description of Your Project">
+                    <img loading="lazy" src="IMG/Maze.jpg" alt="Description of Your Project">
                 </a>
                 <div class="cpp">
                     <mark role="cpp">C++</mark>
@@ -178,16 +110,14 @@
                 </div>
             </div>
         </div>
-
-            
             <div class="img-pro">
                 <a href="https://genesisz0.itch.io/nox">
-                <img src="IMG/nox.png" alt=""> 
+                <img loading="lazy" src="IMG/nox.png" alt="">
                 <div class="cpp">
                     <mark role="cpp">JavaScript</mark>
                     <mark role="engine">Phaser</mark>
-               </div>  
-                </a> 
+               </div>
+                </a>
             </div>
         </div>
 
@@ -195,29 +125,29 @@
 
               <div class="img-pro" style="margin-left: 21%;">
                 <a href="Serpent.html">
-                <img src="IMG/Serpent.png" alt=""> 
+                <img loading="lazy" src="IMG/Serpent.png" alt="">
                 <div class="cpp">
                     <mark role="cpp">C++</mark>
                     <mark role="engine">Unreal 5</mark>
-               </div>  
-                </a> 
+               </div>
+                </a>
             </div>
         </div>
 
               <div class="img-pro" style="margin-right: 0px;">
                 <a href="https://genesisz0.itch.io/nox">
-                <img src="IMG/MECHA.png" alt=""> 
+                <img loading="lazy" src="IMG/MECHA.png" alt="">
                 <div class="cpp">
                     <mark role="cpp">C++</mark>
                     <mark role="engine">Unreal 5</mark>
-               </div>  
-                </a> 
+               </div>
+                </a>
             </div>
         </div>
 
-                   <div class="img-pro" style="margin-left: 41%;" > 
+                   <div class="img-pro" style="margin-left: 41%;" >
                 <a href="">
-                    <img src="IMG/plane.png" alt="Description of Your Project">
+                    <img loading="lazy" src="IMG/plane.png" alt="Description of Your Project">
                 </a>
                 <div class="cpp">
                     <mark role="cpp">C#</mark>
@@ -226,75 +156,49 @@
             </div>
         </div>
 
-
-
-
         <h3 class="heading specific-heading"><span>Jam</span> Projects</h3>
-   
 
             <div class="img-container">
                 <div class="img-pro2">
                     <a href="https://edengarden.itch.io/oh-snow">
-                    <img src="IMG/SbowLogo.png" alt="">
+                    <img loading="lazy" src="IMG/SbowLogo.png" alt="">
                      </a>
                     <div class="cpp">
                         <mark role="cpp">Blueprint</mark>
                         <mark role="engine">Unreal5</mark>
                     </div>
                 </div>
-
                 <div class="img-pro2">
                     <a href="https://orianneg.itch.io/ben-la-terre">
-                    <img src="IMG/ccgtLogo.png" alt="">
+                    <img loading="lazy" src="IMG/ccgtLogo.png" alt="">
                 </a>
                     <div class="cpp">
                         <mark role="cpp">Blueprint</mark>
                         <mark role="engine">Unreal5</mark>
                     </div>
                 </div>
-
-                
             </div>
 </section>
 
-
-
-
 <section class="contact-section" id="contact">
-
-
     <div class="contact-content">
-
         <h2 class="heading"><span>Contact</span> Info</h2>
-
         <div class="case">
-            <img src="IMG/phoneLogo.png" alt = "">
+            <img loading="lazy" src="IMG/phoneLogo.png" alt = "">
             <h4>Contact</h4>
             <h3>06 50 84 89 88</h3>
-
         </div>
-
         <div class="case2">
-            <img src="IMG/mailLogo.png" alt = "">
+            <img loading="lazy" src="IMG/mailLogo.png" alt = "">
             <h4>Email</h4>
             <h3>peyronnathan84@gmail.com</h3>
-
         </div>
         <div class="case3">
-            <img src="IMG/LocationLogo.png" alt = "">
+            <img loading="lazy" src="IMG/LocationLogo.png" alt = "">
             <h4>Address</h4>
             <h3>84200 Gordes</h3>
-
         </div>
     </div>
-
-
 </section>
-
-<script src="script.js"></script>
-<script defer src="scriptFade.js"></script>
-
 </body>
-
-
 </html>
